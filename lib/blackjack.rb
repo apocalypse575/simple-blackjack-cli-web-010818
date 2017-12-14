@@ -49,15 +49,14 @@ def invalid_command
   puts "Please enter a valid command"
 end
 
-def runner(card_total)
+def runner
   welcome
-  initial_round
-  total = card_total
+  total = initial_round
 until total >= 22
-  hit?
-  display_card_total
+  total = hit?(total)
+  display_card_total(total)
 end
-  end_game
+  end_game(total)
 end
 
 
