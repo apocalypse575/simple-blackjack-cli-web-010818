@@ -60,7 +60,6 @@ end
   end_game
 end
 
-runner(card_total)
 
 #####################################################
 # get every test to pass before coding runner below #
